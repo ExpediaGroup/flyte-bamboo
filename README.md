@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/HotelsDotCom/flyte-bamboo.svg?branch=master)](https://travis-ci.org/HotelsDotCom/flyte-bamboo)
+
 ## Overview
 
 The Bamboo pack provides the ability to label and delete label from a build

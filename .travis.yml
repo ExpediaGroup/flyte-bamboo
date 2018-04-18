@@ -1,11 +1,24 @@
-# Travis config for flyte-bamboo
 sudo: required
+
+language: generic
+
+env:
+  global:
+    - IMAGE=hotelsdotcom/flyte-bamboo
+    - MAJOR_VERSION=1
 
 services:
   - docker
 
-env:
-  - MAJOR_VERSION=1
-
 script:
-  - docker build -t hotelsdotcom/flyte-bamboo:$MAJOR_VERSION.$TRAVIS_BUILD_NUMBER .
+  - docker build -t $IMAGE:$MAJOR_VERSION.$TRAVIS_BUILD_NUMBER .
+
+before_deploy:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
+
+deploy:
+  provider: script
+  script:
+    - docker push $IMAGE:$MAJOR_VERSION.$TRAVIS_BUILD_NUMBER
+  on:
+    branch: master
