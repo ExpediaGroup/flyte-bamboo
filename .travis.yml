@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  - MAJOR_VERSION=1
+
+script:
+  - docker build -t hotelsdotcom/flyte-bamboo:$MAJOR_VERSION.$TRAVIS_BUILD_NUMBER .
