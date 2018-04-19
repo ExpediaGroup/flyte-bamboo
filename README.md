@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/HotelsDotCom/flyte-bamboo.svg?branch=master)](https://travis-ci.org/HotelsDotCom/flyte-bamboo)
+[![Docker Stars](https://img.shields.io/docker/stars/hotelsdotcom/flyte-bamboo.svg)](https://hub.docker.com/r/hotelsdotcom/flyte-bamboo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hotelsdotcom/flyte-bamboo.svg)](https://hub.docker.com/r/hotelsdotcom/flyte-bamboo)
+
 
 ## Overview
 
