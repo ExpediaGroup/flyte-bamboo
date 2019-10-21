@@ -17,13 +17,13 @@ limitations under the License.
 package main
 
 import (
-	"net/url"
-	"os"
 	"github.com/HotelsDotCom/flyte-bamboo/bamboo"
 	"github.com/HotelsDotCom/flyte-bamboo/command"
 	"github.com/HotelsDotCom/flyte-client/client"
 	"github.com/HotelsDotCom/flyte-client/flyte"
 	"github.com/HotelsDotCom/go-logger"
+	"net/url"
+	"os"
 	"time"
 )
 

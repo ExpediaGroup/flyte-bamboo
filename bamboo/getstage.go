@@ -19,9 +19,9 @@ package bamboo
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/HotelsDotCom/go-logger"
 	"io/ioutil"
 	"net/http"
-	"github.com/HotelsDotCom/go-logger"
 )
 
 type ResultResponse struct {

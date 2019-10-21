@@ -32,7 +32,7 @@ func (c client) TriggerPlan(plan string) error {
 	}
 
 	if response.StatusCode != http.StatusOK {
-		err = fmt.Errorf("PUT failed: path=%s plan=%s code=%s", path, plan, response.StatusCode)
+		err = fmt.Errorf("PUT failed: path=%s plan=%s code=%v", path, plan, response.StatusCode)
 		return err
 	}
 

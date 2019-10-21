@@ -18,6 +18,7 @@ package bamboo
 
 import (
 	"bytes"
+	"crypto/tls"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -25,7 +26,6 @@ import (
 	"net/url"
 	"strings"
 	"time"
-	"crypto/tls"
 )
 
 type Retry struct {
@@ -76,8 +76,8 @@ func NewBambooClient(httpClient *http.Client, baseUrl, user, pass string) (Bambo
 }
 
 func DefaultBambooClient(baseUrl, username, password string) (BambooClient, error) {
-	tr := &http.Transport{TLSClientConfig:&tls.Config{InsecureSkipVerify:true}}
-	httpClient := &http.Client{Timeout: 60 * time.Second, Transport:tr}
+	tr := &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: true}}
+	httpClient := &http.Client{Timeout: 60 * time.Second, Transport: tr}
 	return NewBambooClient(httpClient, baseUrl, username, password)
 }
 

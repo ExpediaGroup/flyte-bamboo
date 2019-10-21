@@ -12,7 +12,6 @@ The Bamboo pack provides the ability to label and delete label from a build
 
 To build and run from the command line:
 * Clone this repo
-* Run `dep ensure` (must have [dep](https://github.com/golang/dep) installed )
 * Run `go test ./...`
 * Run `go build`
 * Run `FLYTE_API_URL=http://localhost:8080/ BAMBOO_HOST=http://localhost:8085 BAMBOO_USER=user1 BAMBOO_PASS=pass ./flyte-bamboo`

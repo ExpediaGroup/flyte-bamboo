@@ -18,8 +18,8 @@ package bamboo
 
 import (
 	"fmt"
-	"net/http"
 	"github.com/HotelsDotCom/go-logger"
+	"net/http"
 	"time"
 )
 
@@ -55,4 +55,3 @@ func (c client) StartStage(build, stage string, vars map[string]string, retry Re
 	return fmt.Errorf("bamboo is returning a %d error. Build: %v,stage: %v", response.StatusCode, build, stage)
 
 }
-

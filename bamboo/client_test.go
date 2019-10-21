@@ -27,7 +27,6 @@ import (
 	"time"
 )
 
-
 func TestNewBambooClient(t *testing.T) {
 
 	httpClient := &http.Client{
@@ -62,7 +61,7 @@ func TestDefaultClientTimeoutIsSet(t *testing.T) {
 	cl, err := DefaultBambooClient("http://localhost:8085", "username", "password")
 	assert.NoErrorf(t, err, "Unexpected Error: %+v", err)
 	assert.NotZero(t, cl.(client).httpClient.Timeout)
-	assert.Equal(t, 60 * time.Second, cl.(client).httpClient.Timeout)
+	assert.Equal(t, 60*time.Second, cl.(client).httpClient.Timeout)
 }
 
 func bambooClient(t *testing.T, url string) BambooClient {
@@ -223,7 +222,7 @@ func TestClient_DelayedStageRun_Handles500(t *testing.T) {
 	retry := Retry{Count: 0, Retries: 4, RetrySleep: time.Second * 2}
 	errText := errors.New("bamboo is returning a 500 error. Build: ABC-123,stage: staging")
 
-	err := client.StartStage("ABC-123", "staging", map[string]string{"deploySuccess": "true"},retry)
+	err := client.StartStage("ABC-123", "staging", map[string]string{"deploySuccess": "true"}, retry)
 	assert.Errorf(t, err, errText.Error())
 }
 
