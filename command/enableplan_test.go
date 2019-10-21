@@ -18,8 +18,8 @@ package command
 
 import (
 	"errors"
-	"reflect"
 	"github.com/HotelsDotCom/flyte-bamboo/event"
+	"reflect"
 	"testing"
 )
 
