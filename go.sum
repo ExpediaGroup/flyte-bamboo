@@ -1,0 +1,10 @@
+github.com/HotelsDotCom/flyte-client v0.0.0-20180416153839-ad4cc3a66ae5 h1:QRNaB9ORChHHJd1+DZx89v43//y0TS5kOxSaP3rXKtk=
+github.com/HotelsDotCom/flyte-client v0.0.0-20180416153839-ad4cc3a66ae5/go.mod h1:JOi5h1FIz9nT+e1DBXjcMrHD5TMx9vYL1HjlRjFUP9k=
+github.com/HotelsDotCom/go-logger v0.0.0-20180416152005-687d54c98efb h1:oL2enay/vVD2hMS9L78wyb/3RO3IjOhWyAgpgGd1B2E=
+github.com/HotelsDotCom/go-logger v0.0.0-20180416152005-687d54c98efb/go.mod h1:rvobSJoTaXXfnosmzN6/TT7EGplWZoZZB2GSO1xGG9g=
+github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
+github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/testify v1.2.1 h1:52QO5WkIUcHGIR7EnGagH88x1bUzqGXTC5/1bDTUQ7U=
+github.com/stretchr/testify v1.2.1/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=

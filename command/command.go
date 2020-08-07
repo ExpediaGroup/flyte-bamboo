@@ -16,7 +16,7 @@ limitations under the License.
 
 package command
 
-import "github.com/HotelsDotCom/flyte-bamboo/bamboo"
+import "github.com/ExpediaGroup/flyte-bamboo/bamboo"
 
 type CommandService struct {
 	bambooClient bamboo.BambooClient

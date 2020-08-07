@@ -17,8 +17,8 @@ limitations under the License.
 package main
 
 import (
-	"github.com/HotelsDotCom/flyte-bamboo/bamboo"
-	"github.com/HotelsDotCom/flyte-bamboo/command"
+	"github.com/ExpediaGroup/flyte-bamboo/bamboo"
+	"github.com/ExpediaGroup/flyte-bamboo/command"
 	"github.com/HotelsDotCom/flyte-client/client"
 	"github.com/HotelsDotCom/flyte-client/flyte"
 	"github.com/HotelsDotCom/go-logger"
@@ -38,7 +38,7 @@ func main() {
 
 	packDef := flyte.PackDef{
 		Name:    "Bamboo",
-		HelpURL: getUrl("https://github.com/HotelsDotCom/flyte-bamboo/blob/master/README.md"),
+		HelpURL: getUrl("https://github.com/ExpediaGroup/flyte-bamboo/blob/master/README.md"),
 		Commands: []flyte.Command{
 			commandService.AddLabelCommand(),
 			commandService.DeleteLabelCommand(),

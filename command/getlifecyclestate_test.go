@@ -18,9 +18,9 @@ package command
 
 import (
 	"errors"
+	"github.com/ExpediaGroup/flyte-bamboo/bamboo"
+	"github.com/ExpediaGroup/flyte-bamboo/event"
 	"github.com/stretchr/testify/assert"
-	"github.com/HotelsDotCom/flyte-bamboo/bamboo"
-	"github.com/HotelsDotCom/flyte-bamboo/event"
 	"testing"
 )
 
