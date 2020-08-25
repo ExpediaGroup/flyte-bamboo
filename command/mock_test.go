@@ -17,7 +17,7 @@ limitations under the License.
 package command
 
 import (
-	"github.com/HotelsDotCom/flyte-bamboo/bamboo"
+	"github.com/ExpediaGroup/flyte-bamboo/bamboo"
 )
 
 type MockBambooClient struct {
@@ -39,7 +39,7 @@ func (m MockBambooClient) DeleteLabel(build, label string) error {
 }
 
 func (m MockBambooClient) StartStage(build, stage string, vars map[string]string, retry bamboo.Retry) error {
-	return m.startStage(build, stage, vars,retry)
+	return m.startStage(build, stage, vars, retry)
 }
 
 func (m MockBambooClient) TriggerPlan(plan string) error {

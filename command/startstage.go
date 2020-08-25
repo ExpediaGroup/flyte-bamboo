@@ -19,8 +19,8 @@ package command
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/HotelsDotCom/flyte-bamboo/bamboo"
-	"github.com/HotelsDotCom/flyte-bamboo/event"
+	"github.com/ExpediaGroup/flyte-bamboo/bamboo"
+	"github.com/ExpediaGroup/flyte-bamboo/event"
 	"github.com/HotelsDotCom/flyte-client/flyte"
 	"github.com/HotelsDotCom/go-logger"
 	"time"
